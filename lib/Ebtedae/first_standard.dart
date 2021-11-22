@@ -1,0 +1,102 @@
+import 'package:flutter/material.dart';
+
+class first_standard extends StatelessWidget {
+  const first_standard({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        backgroundColor: Color(0xFFe0ffff),
+        appBar: AppBar(
+          backgroundColor: Colors.teal,
+          title: Text("প্রথম শ্রেণি",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+
+        ),
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: ListView(
+            children: <Widget>[
+              Card(
+
+                color: Colors.white,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10))
+                ),
+                child: ListTile(
+                  title: Text("  আমার বাংলা বই",
+                    style: TextStyle(fontSize: 17,fontWeight: FontWeight.w600),),
+                  leading: Icon(Icons.book_outlined,color: Colors.teal,size: 40,),
+                  trailing: Icon(Icons.bookmark_border,color: Colors.teal,size: 40,),
+                ),
+              ),
+              Card(
+
+                color: Colors.white,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10))
+                ),
+                child: ListTile(
+                  title: Text("  English for Today",
+                    style: TextStyle(fontSize: 17,fontWeight: FontWeight.w600),),
+                  leading: Icon(Icons.book_outlined,color: Colors.teal,size: 40,),
+                  trailing: Icon(Icons.bookmark_border,color: Colors.teal,size: 40,),
+                ),
+              ),
+              Card(
+
+                color: Colors.white,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10))
+                ),
+                child: ListTile(
+                  title: Text("  গণিত",
+                    style: TextStyle(fontSize: 17,fontWeight: FontWeight.w600),),
+                  leading: Icon(Icons.book_outlined,color: Colors.teal,size: 40,),
+                  trailing: Icon(Icons.bookmark_border,color: Colors.teal,size: 40,),
+                ),
+              ),
+              Card(
+
+                color: Colors.white,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10))
+                ),
+                child: ListTile(
+                  title: Text("  কুরআন মাজিদ ও তাজভিদ",
+                    style: TextStyle(fontSize: 16,fontWeight: FontWeight.w600),),
+                  leading: Icon(Icons.book_outlined,color: Colors.teal,size: 40,),
+                  trailing: Icon(Icons.bookmark_border,color: Colors.teal,size: 40,),
+                ),
+              ),
+              Card(
+
+                color: Colors.white,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10))
+                ),
+                child: ListTile(
+                  title: Text("  আকাইদ ও ফিক্হ",
+                    style: TextStyle(fontSize: 17,fontWeight: FontWeight.w600),),
+                  leading: Icon(Icons.book_outlined,color: Colors.teal,size: 40,),
+                  trailing: Icon(Icons.bookmark_border,color: Colors.teal,size: 40,),
+                ),
+              ),
+              Card(
+
+                color: Colors.white,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10))
+                ),
+                child: ListTile(
+                  title: Text("  আদ্ দুরুসুল আরাবিয়্যাহ্",
+                    style: TextStyle(fontSize: 17,fontWeight: FontWeight.w600),),
+                  leading: Icon(Icons.book_outlined,color: Colors.teal,size: 40,),
+                  trailing: Icon(Icons.bookmark_border,color: Colors.teal,size: 40,),
+                ),
+              ),
+            ],
+          ),
+        )
+    );
+  }
+}
